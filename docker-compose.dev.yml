@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  cache-tester: 
+    build:
+      context: .
+      target: development
+    volumes:
+      - ./outputVolume:/usr/src/app/output
+    command: npm run dev
